@@ -485,6 +485,7 @@
  .question-arrow {
      position: absolute;
      width: 24px;
+     fill: currentColor;
      color: #e8eaed;
      right: 0;
  }
