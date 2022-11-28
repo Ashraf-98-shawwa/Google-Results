@@ -357,23 +357,27 @@
 
 
  }
-main .brief .links .alink {
-    padding-bottom: 10px;
-}
- main .brief .links  .alink a {
+
+ main .brief .links .alink {
+     padding-bottom: 10px;
+ }
+
+ main .brief .links .alink a {
      font-size: 15px;
 
  }
 
- main .brief .links  .alink a:nth-child(1) {
+ main .brief .links .alink a:nth-child(1) {
      color: #bdc1c6 !important;
  }
 
- main .brief .links  .alink a:nth-child(1):hover {
+ main .brief .links .alink a:nth-child(1):hover {
      text-decoration: underline;
  }
- main .brief .links  .alink a:nth-child(2) {
-    color: #8ab4f8; }
+
+ main .brief .links .alink a:nth-child(2) {
+     color: #8ab4f8;
+ }
 
  main .brief .links .alink a:nth-child(2):hover {
      text-decoration: underline;
@@ -382,3 +386,41 @@ main .brief .links .alink {
  /* Brief div styling End */
 
  /* Main styling End*/
+
+
+
+ /* styling the footer start */
+ footer {
+     background-color: #171717;
+     font-size: 14px;
+     font-family: arial, sans-serif;
+     color: #9aa0a6;
+     height: 94px;
+     font-size: 15px;
+
+ }
+
+ footer>p {
+     padding: 15px 150px;
+     border-bottom: 1px solid #3c4043;
+     text-transform: capitalize;
+ }
+
+ footer section {
+     padding: 14px 150px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ footer section ul:nth-child(1) {
+     display: flex;
+     gap: 30px;
+     margin-left: 1px;
+ }
+
+ footer section ul li a {
+     color: #9aa0a6;
+     font-size: 14px;
+ }
+
+ /* styling the footer  end*/
