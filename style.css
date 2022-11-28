@@ -34,6 +34,7 @@
      border-bottom: 1px solid #3c4043;
  }
 
+
  header img.logo {
      grid-row: 1;
      grid-column: 1;
@@ -50,8 +51,17 @@
      height: 100%;
  }
 
+ @media (max-width:991px) {
+
+     header section {
+         display: block;
+
+     }
+ }
 
  /* ##Styling search box Start */
+
+
  header section .searchbox form {
      width: 100%;
      height: 100%;
@@ -71,6 +81,12 @@
      align-items: center;
      background-color: #303134;
      margin-left: 10px;
+ }
+
+ @media (max-width:991px) {
+     header section .search-box {
+        margin-top: 10px;
+     }
  }
 
  header section .search-box:hover {
@@ -115,6 +131,12 @@
      padding: 10px 5px;
      gap: 15px;
  }
+ @media (max-width:991px) {
+    header section .right-navigation {
+        display: none;
+     }
+ }
+
 
  header section .right-navigation ul li {
 
@@ -153,12 +175,20 @@
      padding-left: 15px;
  }
 
+
  header section .left-bottom-navigation ul {
      display: flex;
      justify-content: space-between;
      align-items: center;
      gap: 25px;
  }
+ @media (max-width:991px) {
+header section .left-bottom-navigation ul {
+         margin-top: 49px;
+         margin-left: -140px;
+     }
+ }
+
 
  header section .left-bottom-navigation ul li a {
      display: flex;
@@ -204,6 +234,14 @@
      padding: 4px 11px;
  }
 
+ @media (max-width:991px) {
+
+     header section .left-bottom-navigation div button {
+         display: none;
+
+     }
+ }
+
  header section .left-bottom-navigation button:hover {
      box-shadow: 0 1px 1px rgb(23 23 23 / 90%);
      background-color: #303134;
@@ -219,7 +257,7 @@
 
  /* Main styling Start */
 
- /* Main div styling start */
+ /* ## Main div styling start */
  main {
      display: grid;
      grid-template-columns: 146px 640px auto;
@@ -233,6 +271,10 @@
      padding: 10px 20px;
      color: #9aa0a6;
  }
+
+
+
+
 
  main .main>p {
      font-size: 14px;
@@ -302,12 +344,37 @@
 
  /* Main div styling End*/
 
+
+ @media (max-width:1200px) {
+
+     main {
+         display: grid;
+         grid-template-columns: auto;
+         grid-template-rows: auto;
+         grid-template-areas: " main ";
+
+     }
+
+     main .main {
+         padding: 40px;
+     }
+ }
+
+
+
  /* Brief div styling Start */
  main .brief {
      grid-area: brief;
      color: #9aa0a6;
      padding-top: 50px;
      margin-left: 20%;
+ }
+
+ @media (max-width:1200px) {
+
+     main .brief {
+         display: none;
+     }
  }
 
  main .brief .react {
