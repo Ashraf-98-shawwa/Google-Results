@@ -18,7 +18,6 @@
      background-color: #202124;
      color: #fff;
      font-family: arial, sans-serif;
-     height: 200vh;
  }
 
 
@@ -457,14 +456,14 @@
 
  /* question styling start  */
  /* Questions Box */
- .questions-box {
-     margin-bottom: 40px ;
+  main .questions-box {
+     margin-bottom: 40px;
      padding-bottom: 10px;
      position: relative;
      border-bottom: 1px solid #3c4043;
  }
 
- .questions-box-title {
+  main .questions-box-title {
      font-size: 22px;
      font-family: Google Sans, arial, sans-serif;
      padding: 9px 16px;
@@ -472,7 +471,7 @@
      color: #e8eaed;
  }
 
- .question {
+  main .question {
      padding: 9px 16px;
      font-size: 16px;
      line-height: 1.58;
@@ -480,9 +479,9 @@
      position: relative;
      color: #e8eaed;
  }
- 
 
- .question-arrow {
+
+  main .question-arrow {
      position: absolute;
      width: 24px;
      fill: currentColor;
@@ -490,8 +489,8 @@
      right: 0;
  }
 
- .question-feedback {
-     padding: 6px 15px ;
+  main .question-feedback {
+     padding: 6px 15px;
      font-size: 12px;
      color: #9aa0a6;
      position: absolute;
@@ -500,11 +499,91 @@
      background-color: #202124;
  }
 
- .question-feedback:hover {
+  main .question-feedback:hover {
      text-decoration: underline;
  }
 
- /* question styling  end*/
+ /* ##question styling  end*/
+
+ /* Related searches styling start */
+  main .related-search-box {
+     display: grid;
+     grid-template-columns: repeat(50%, 2);
+     grid-template-rows: 20% 20% 20% 20% 20%;
+     row-gap: 20px;
+     column-gap: 10px;
+     min-height: 50vh;
+
+ }
+
+  main .related-search-box .search-example {
+     padding: 5px 15px;
+     background-color: #303134;
+     border-radius: 50px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 10px;
+ }
+
+  main .related-search-box .search-example a {
+     color: #e8eaed;
+ }
+
+  main .related-search-box .search-example a:hover {
+     text-decoration: underline;
+ }
+
+   main .related-search-box .first {
+     grid-column: 1;
+     grid-row: 1/2;
+ }
+
+  main .related-search-box .second {
+     grid-column: 2;
+     grid-row: 1/2;
+ }
+
+   main .related-search-box .third {
+     grid-column: 1;
+     grid-row: 2/3;
+ }
+
+   main .related-search-box .fourth {
+     grid-column: 2;
+     grid-row: 2/3;
+ }
+
+   main .related-search-box .fifth {
+     grid-column: 1;
+     grid-row: 3/4;
+ }
+
+   main .related-search-box .sixth {
+        grid-column: 2;
+            grid-row: 3/4;
+ }
+
+   main .related-search-box .seventh {
+        grid-column: 1;
+            grid-row: 4/5;
+ }
+  main .related-search-box  .eigthth {
+        grid-column: 2;
+            grid-row: 4/5;
+ }
+
+ .related-box-title {
+     font-size: 22px;
+     font-family: Google Sans, arial, sans-serif;
+     padding: 9px 16px;
+     line-height: 1.3;
+     color: #e8eaed;
+ }
+
+ /* Related searches styling end */
+
+
  /* Main styling End*/
 
 
@@ -515,7 +594,7 @@
      font-size: 14px;
      font-family: arial, sans-serif;
      color: #9aa0a6;
-     height: 94px;
+     min-height: 94px;
      font-size: 15px;
 
  }
