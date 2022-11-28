@@ -1,4 +1,3 @@
- 
  /* Global styling  */
  * {
      margin: 0;
@@ -12,10 +11,374 @@
  a {
      text-decoration: none;
  }
-  /* Global styling  */
 
-body {
-    background-color: #202124;
-    color: #fff;
-    font-family: arial, sans-serif;
+ /* Global styling  */
+
+ body {
+     background-color: #202124;
+     color: #fff;
+     font-family: arial, sans-serif;
+     height: 200vh;
+ }
+
+
+ /* header styling  */
+
+ header {
+     display: grid;
+     grid-template-rows: 1;
+     grid-template-columns: 100px 1fr;
+     padding: 25px 25px 0px 25px;
+     gap: 25px;
+     height: 110px;
+     border-bottom: 1px solid #3c4043;
+ }
+
+ header img.logo {
+     grid-row: 1;
+     grid-column: 1;
+     margin: 10px 10px 0px 0px;
+     cursor: pointer;
+ }
+
+ header section {
+     grid-row: 1;
+     grid-column: 2;
+     display: grid;
+     grid-template-rows: 50% 50%;
+     grid-template-columns: 60% 40%;
+     height: 100%;
+ }
+
+
+ /* ##Styling search box Start */
+ header section .searchbox form {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     margin-top: -3px;
+
+ }
+
+
+ header section .search-box {
+     padding: 1px 7px 1px 7px;
+     width: 100%;
+     height: 80%;
+     border-radius: 50px;
+     display: flex;
+     align-items: center;
+     background-color: #303134;
+     margin-left: 10px;
+ }
+
+ header section .search-box:hover {
+     background-color: #303134;
+     border-color: #303134;
+     box-shadow: 0 1px 6px 0 #171717;
+ }
+
+ header section .search-box form {
+     height: 100%;
+ }
+
+ header section .search-box input {
+     background-color: transparent;
+     border: 0px;
+     outline: none;
+     margin-left: 10px;
+     height: 34px;
+     color: #e8eaed;
+     font-size: 16px;
+     width: 84%
+ }
+
+ header section form img,
+ header section form svg {
+     cursor: pointer;
+ }
+
+ /* ##Styling the Search Box End */
+
+
+
+
+
+
+ /* ##Styling the right-navigation Start */
+ header section .right-navigation ul {
+
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 10px 5px;
+     gap: 15px;
+ }
+
+ header section .right-navigation ul li {
+
+     border-radius: 50%;
+     width: 32px;
+     height: 32px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ header section .right-navigation ul li:hover {
+     background-color: rgba(232, 234, 237, .08);
+     cursor: pointer;
+ }
+
+ header section .right-navigation ul li a img:hover {
+     background-color: rgba(232, 234, 237, .08);
+     cursor: pointer;
+     padding: 5px;
+ }
+
+ header section img {
+     border-radius: 50%;
+ }
+
+ /* ##Styling the right-navigation Start */
+
+
+
+ /* ##Styling the left-bottom-navigation Start */
+
+ header section .left-bottom-navigation {
+     display: flex;
+     justify-content: space-between;
+     padding-left: 15px;
+ }
+
+ header section .left-bottom-navigation ul {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 25px;
+ }
+
+ header section .left-bottom-navigation ul li a {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     font-size: 14px;
+     font-family: Google Sans, arial, sans-serif;
+ }
+
+
+ header section .left-bottom-navigation ul li.active {
+     border-bottom: 3px solid #8ab4f8;
+     height: 100%;
+     display: flex;
+     box-sizing: border-box;
+ }
+
+
+ header section .left-bottom-navigation svg {
+     width: 15px;
+     height: 15px;
+     fill: #969ba1;
+ }
+
+ header section .left-bottom-navigation a {
+     color: #969ba1;
+ }
+
+ header section .left-bottom-navigation div {
+     margin-top: 10px;
+ }
+
+ header section .left-bottom-navigation div button {
+     border: 1px solid transparent;
+     text-align: center;
+     border-radius: 2px;
+     line-height: 19px;
+     cursor: pointer;
+     margin-right: 15px;
+     margin-top: 5px;
+     background-color: transparent;
+     color: #969ba1;
+     padding: 4px 11px;
+ }
+
+ header section .left-bottom-navigation button:hover {
+     box-shadow: 0 1px 1px rgb(23 23 23 / 90%);
+     background-color: #303134;
+     border: 1px solid #5f6368;
+     color: #e8eaed;
+ }
+
+ /* ##Styling the left-bottom-navigation End */
+
+
+ /* Header styling End  */
+
+
+ /* Main styling Start */
+
+ /* Main div styling start */
+ main {
+     display: grid;
+     grid-template-columns: 146px 640px auto;
+     grid-template-rows: auto;
+     grid-template-areas: ". main brief";
+
+ }
+
+ main .main {
+     grid-area: main;
+     padding: 10px 20px;
+     color: #9aa0a6;
+ }
+
+ main .main>p {
+     font-size: 14px;
+ }
+
+ main .main .search-results {
+     padding-top: 25px;
+     font-family: arial, sans-serif;
+     font-size: 14px;
+     color: #bdc1c6;
+     line-height: 1.15;
+ }
+
+ main .main .search-result {
+     display: flex;
+     flex-direction: column;
+     padding-bottom: 35px;
+ }
+
+ main .main .search-result a {
+     color: #8ab4f8;
+ }
+
+ main .main .search-result a h3 {
+     font-size: 20px;
+     font-weight: 400;
+ }
+
+ main .main .search-result a h3:hover {
+     text-decoration: underline;
+ }
+
+ main .main .search-result a p {
+     display: flex;
+     align-items: center;
+     margin-bottom: 10px;
+     color: #bdc1c6;
+ }
+
+ main .main .search-result p.result-text {
+
+     margin-top: 10px;
+     line-height: 1.58;
+ }
+
+ main .main .search-result .link {
+
+     margin-top: 15px;
+     padding: 10px;
+
+ }
+
+ main .main .search-result .link h3 {
+     font-size: 20px;
+     font-weight: 400;
+
+ }
+
+ main .main .search-result .more {
+     padding: 10px;
+
+ }
+
+ main .main .search-result .more:hover {
+     text-decoration: underline;
+ }
+
+ /* Main div styling End*/
+
+ /* Brief div styling Start */
+ main .brief {
+     grid-area: brief;
+     color: #9aa0a6;
+     padding-top: 50px;
+     margin-left: 20%;
+ }
+
+ main .brief .react {
+     border: 1px solid #3c4043;
+     width: 80%;
+     border-radius: 8px;
+     overflow: hidden;
+ }
+
+ main .brief .title {
+     border-bottom: 1px solid #3c4043;
+     padding: 15px;
+
+ }
+
+ main .brief .title h2 {
+     font-family: Google Sans, arial, sans-serif;
+     font-weight: 400;
+     color: white;
+     font-size: 30px;
+     margin-bottom: 8px;
+
+ }
+
+ main .brief .title p {
+     color: #9aa0a6;
+     font-family: arial, sans-serif;
+     font-size: 14px;
+ }
+
+ main .brief .description {
+     padding: 15px;
+ }
+
+ main .brief .description a {
+     color: #8ab4f8;
+     display: inline-block;
+     margin-top: 10px;
+ }
+
+ main .brief .description a:hover {
+     text-decoration: underline;
+ }
+
+ main .brief .links {
+     padding: 15px;
+
+
+ }
+main .brief .links .alink {
+    padding-bottom: 10px;
 }
+ main .brief .links  .alink a {
+     font-size: 15px;
+
+ }
+
+ main .brief .links  .alink a:nth-child(1) {
+     color: #bdc1c6 !important;
+ }
+
+ main .brief .links  .alink a:nth-child(1):hover {
+     text-decoration: underline;
+ }
+ main .brief .links  .alink a:nth-child(2) {
+    color: #8ab4f8; }
+
+ main .brief .links .alink a:nth-child(2):hover {
+     text-decoration: underline;
+ }
+
+ /* Brief div styling End */
+
+ /* Main styling End*/
